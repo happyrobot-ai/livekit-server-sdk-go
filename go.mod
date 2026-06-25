@@ -152,4 +152,4 @@ require (
 tool github.com/maxbrunsfeld/counterfeiter/v6
 
 // HappyRobot fork: protocol carries the SipInfo data packet type (APP-4619).
-replace github.com/livekit/protocol => github.com/happyrobot-ai/livekit-protocol v1.45.9-hr.2
+replace github.com/livekit/protocol => github.com/happyrobot-ai/livekit-protocol v1.45.9-hr.3
