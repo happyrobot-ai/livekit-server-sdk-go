@@ -652,6 +652,8 @@ func (e *RTCEngine) handleDataPacket(msg webrtc.DataChannelMessage) {
 		})
 	case *livekit.DataPacket_SipDtmf:
 		e.engineHandler.OnDataPacket(identity, msg.SipDtmf)
+	case *livekit.DataPacket_SipInfo:
+		e.engineHandler.OnDataPacket(identity, msg.SipInfo)
 	case *livekit.DataPacket_ChatMessage:
 		e.engineHandler.OnDataPacket(identity, msg.ChatMessage)
 	case *livekit.DataPacket_Transcription:
